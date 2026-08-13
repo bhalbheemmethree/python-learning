@@ -1,8 +1,8 @@
 # 🐍 Python Learning
 
 Welcome to my Python Learning repository.
-
-This repository contains my topic-wise Python practice code, notes, and examples created while learning Python from beginner to advanced concepts.
+This repository contains my topic-wise Python practice code, notes, and examples created while learning Python for only fundamentals and beginner friendly
+Contains only basic and fundamental topics only
 
 ## 📚 Topics Covered
 
@@ -21,13 +21,6 @@ This repository contains my topic-wise Python practice code, notes, and examples
 - File Handling
 - Exception Handling
 - Modules & Packages
-- Object-Oriented Programming (OOP)
-- Iterators & Generators
-- Decorators
-- Regular Expressions
-- Date & Time
-- Working with Files
-- Python Best Practices
 
 ## 🎯 Purpose
 
@@ -36,7 +29,6 @@ The purpose of this repository is to:
 - Practice Python concepts
 - Strengthen programming fundamentals
 - Build problem-solving skills
-- Prepare for backend development
 - Track my Python learning journey
 
 ## 🛠 Technologies Used
