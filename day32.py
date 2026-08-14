@@ -8,24 +8,24 @@
 # WHAT IS enumerate()?
 # ==========================================================
 
-Definition:
+# Definition:
 
-The enumerate() function is used to loop through a sequence
-while getting both the index and the value at the same time.
+'''The enumerate() function is used to loop through a sequence
+while getting both the index and the value at the same time.'''
 
-It is commonly used with:
+# It is commonly used with:
 
-• Lists
-• Tuples
-• Strings
-• Other iterable objects
+# • Lists
+# • Tuples
+# • Strings
+# • Other iterable objects
 
 
 # ==========================================================
 # BASIC SYNTAX
 # ==========================================================
 
-enumerate(iterable, start=0)
+# enumerate(iterable, start=0)
 
 
 # start is optional.
@@ -54,10 +54,10 @@ for index, name in enumerate(names):
 # WHY USE enumerate()?
 # ==========================================================
 
-Without enumerate(), we may need to manually maintain
-an index.
+'''Without enumerate(), we may need to manually maintain
+an index.'''
 
-Example:
+# Example:
 
 names = ["Alice", "Bob", "Charlie"]
 
@@ -401,3 +401,4 @@ for index, name in enumerate(names):
 # • It makes indexed loops cleaner.
 # • It works with lists, tuples, strings and other iterables.
 # • It is commonly used with for loops.
+
