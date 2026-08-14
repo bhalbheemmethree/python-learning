@@ -8,20 +8,20 @@
 # WHAT IS A VIRTUAL ENVIRONMENT?
 # ==========================================================
 
-Definition:
+# Definition:
 
-A virtual environment is an isolated Python environment
+'''A virtual environment is an isolated Python environment
 that allows a project to have its own Python packages and
 dependencies.
 
-Each project can have its own separate environment.
+Each project can have its own separate environment.'''
 
 
 # ==========================================================
 # WHY IS A VIRTUAL ENVIRONMENT NEEDED?
 # ==========================================================
 
-Different projects may require different versions of
+'''Different projects may require different versions of
 the same package.
 
 A virtual environment keeps project dependencies separate.
@@ -36,27 +36,27 @@ Project B
     ↓
 Package version 2
 
-Both projects can work independently.
+Both projects can work independently.'''
 
 
 # ==========================================================
 # ADVANTAGES
 # ==========================================================
 
-• Keeps dependencies isolated.
-• Prevents package conflicts.
-• Keeps projects organized.
-• Allows different package versions for different projects.
-• Makes projects easier to reproduce.
+# • Keeps dependencies isolated.
+# • Prevents package conflicts.
+# • Keeps projects organized.
+# • Allows different package versions for different projects.
+# • Makes projects easier to reproduce.
 
 
 # ==========================================================
 # CREATING A VIRTUAL ENVIRONMENT
 # ==========================================================
 
-Command:
+# Command:
 
-python -m venv venv
+# python -m venv venv
 
 
 # Here:
@@ -73,21 +73,21 @@ python -m venv venv
 
 # You can use another name:
 
-python -m venv myenv
+# python -m venv myenv
 
 
 # ==========================================================
 # ACTIVATING VIRTUAL ENVIRONMENT — WINDOWS
 # ==========================================================
 
-Command:
+# Command:
 
-venv\Scripts\activate
+# venv\Scripts\activate
 
 
 # After activation, you may see:
 
-(venv)
+# (venv)
 
 # at the beginning of the terminal.
 
@@ -96,14 +96,14 @@ venv\Scripts\activate
 # ACTIVATING VIRTUAL ENVIRONMENT — macOS / LINUX
 # ==========================================================
 
-Command:
+# Command:
 
-source venv/bin/activate
+# source venv/bin/activate
 
 
 # After activation:
 
-(venv)
+# (venv)
 
 # appears in the terminal.
 
@@ -112,9 +112,9 @@ source venv/bin/activate
 # CHECKING PYTHON VERSION
 # ==========================================================
 
-Command:
+# Command:
 
-python --version
+# python --version
 
 # Example:
 
@@ -125,43 +125,43 @@ python --version
 # CHECKING PIP VERSION
 # ==========================================================
 
-Command:
+# Command:
 
-pip --version
+# pip --version
 
 
 # ==========================================================
 # WHAT IS pip?
 # ==========================================================
 
-Definition:
+# Definition:
 
-pip is Python's package installer.
+'''pip is Python's package installer.
 
-It is used to install, update and remove Python packages.
+It is used to install, update and remove Python packages.'''
 
 
 # ==========================================================
 # INSTALLING A PACKAGE
 # ==========================================================
 
-Command:
+# Command:
 
-pip install package_name
+# pip install package_name
 
 
 # Example:
 
-pip install requests
+# pip install requests
 
 
 # ==========================================================
 # INSTALLING A SPECIFIC VERSION
 # ==========================================================
 
-Command:
+# Command:
 
-pip install requests==2.31.0
+# pip install requests==2.31.0
 
 
 # This installs the specified version of the package.
@@ -171,9 +171,9 @@ pip install requests==2.31.0
 # UPGRADING A PACKAGE
 # ==========================================================
 
-Command:
+# Command:
 
-pip install --upgrade requests
+# pip install --upgrade requests
 
 
 # This upgrades the package to a newer available version.
@@ -183,9 +183,9 @@ pip install --upgrade requests
 # UNINSTALLING A PACKAGE
 # ==========================================================
 
-Command:
+# Command:
 
-pip uninstall requests
+# pip uninstall requests
 
 
 # pip will ask for confirmation.
@@ -195,9 +195,9 @@ pip uninstall requests
 # LISTING INSTALLED PACKAGES
 # ==========================================================
 
-Command:
+# Command:
 
-pip list
+# pip list
 
 
 # It displays packages installed
@@ -208,41 +208,41 @@ pip list
 # SHOWING PACKAGE INFORMATION
 # ==========================================================
 
-Command:
+# Command:
 
-pip show requests
+# pip show requests
 
 
 # It displays information such as:
 
-• Package name
-• Version
-• Location
-• Dependencies
+# • Package name
+# • Version
+# • Location
+# • Dependencies
 
 
 # ==========================================================
 # REQUIREMENTS.TXT
 # ==========================================================
 
-Definition:
+# Definition:
 
-requirements.txt is a file that contains the Python
+'''requirements.txt is a file that contains the Python
 packages required by a project.
 
 Example:
 
 requests==2.31.0
-flask==3.0.0
+flask==3.0.0'''
 
 
 # ==========================================================
 # CREATING requirements.txt
 # ==========================================================
 
-Command:
+# Command:
 
-pip freeze > requirements.txt
+# pip freeze > requirements.txt
 
 
 # This saves installed packages and their versions
@@ -253,9 +253,9 @@ pip freeze > requirements.txt
 # INSTALLING FROM requirements.txt
 # ==========================================================
 
-Command:
+# Command:
 
-pip install -r requirements.txt
+# pip install -r requirements.txt
 
 
 # This installs all packages listed in the file.
@@ -265,9 +265,9 @@ pip install -r requirements.txt
 # DEACTIVATING VIRTUAL ENVIRONMENT
 # ==========================================================
 
-Command:
+# Command:
 
-deactivate
+# deactivate
 
 
 # The (venv) label disappears from the terminal.
@@ -279,7 +279,7 @@ deactivate
 
 # Step 1:
 
-python -m venv venv
+# python -m venv venv
 
 
 # Step 2:
@@ -288,36 +288,30 @@ python -m venv venv
 
 # macOS / Linux:
 
-source venv/bin/activate
-
-
-# Windows:
-
-venv\Scripts\activate
-
+# source venv/bin/activate
 
 # Step 3:
 
-pip install package_name
+# pip install package_name
 
 
 # Step 4:
 
-pip freeze > requirements.txt
+# pip freeze > requirements.txt
 
 
 # Step 5:
 
-deactivate
+# deactivate
 
 
 # ==========================================================
 # PROJECT STRUCTURE
 # ==========================================================
 
-Example:
+# Example:
 
-my_project/
+'''my_project/
 │
 ├── venv/
 │
@@ -330,14 +324,14 @@ my_project/
 
 # main.py contains the project code.
 
-# requirements.txt contains project dependencies.
+# requirements.txt contains project dependencies.'''
 
 
 # ==========================================================
 # SHOULD venv BE UPLOADED TO GITHUB?
 # ==========================================================
 
-Usually, no.
+'''Usually, no.
 
 The virtual environment contains installed packages
 and can be recreated using requirements.txt.
@@ -345,16 +339,16 @@ and can be recreated using requirements.txt.
 Instead of uploading venv:
 
 • Add venv to .gitignore.
-• Upload requirements.txt.
+• Upload requirements.txt.'''
 
 
 # ==========================================================
 # .gitignore
 # ==========================================================
 
-Example:
+# Example:
 
-venv/
+# venv/
 
 
 # This tells Git to ignore the virtual environment folder.
@@ -364,7 +358,7 @@ venv/
 # GLOBAL PYTHON VS VIRTUAL ENVIRONMENT
 # ==========================================================
 
-Global Python:
+'''Global Python:
 
 • Packages are installed for the general Python environment.
 • Projects can share the same packages.
@@ -374,73 +368,67 @@ Virtual Environment:
 
 • Packages are isolated for a project.
 • Different projects can use different versions.
-• Better for project development.
+• Better for project development.'''
 
 
 # ==========================================================
 # IMPORTANT COMMANDS
 # ==========================================================
 
-Create environment:
+# Create environment:
 
-python -m venv venv
-
-
-Activate — macOS/Linux:
-
-source venv/bin/activate
+# python -m venv venv
 
 
-Activate — Windows:
+# Activate — macOS/Linux:
 
-venv\Scripts\activate
+# source venv/bin/activate
 
+# Install package:
 
-Install package:
-
-pip install package_name
-
-
-Uninstall package:
-
-pip uninstall package_name
+# pip install package_name
 
 
-List packages:
+# Uninstall package:
 
-pip list
-
-
-Package information:
-
-pip show package_name
+# pip uninstall package_name
 
 
-Save dependencies:
+# List packages:
 
-pip freeze > requirements.txt
-
-
-Install dependencies:
-
-pip install -r requirements.txt
+# pip list
 
 
-Upgrade package:
+# Package information:
 
-pip install --upgrade package_name
+# pip show package_name
 
 
-Deactivate:
+# Save dependencies:
 
-deactivate
+# pip freeze > requirements.txt
+
+
+# Install dependencies:
+
+# pip install -r requirements.txt
+
+
+# Upgrade package:
+
+# pip install --upgrade package_name
+
+
+# Deactivate:
+
+# deactivate
 
 
 # ==========================================================
 # QUICK REVISION
 # ==========================================================
 
-Virtual Environment:
+'''Virtual Environment:
 
 An isolated Python environment for a project.
 
@@ -462,20 +450,20 @@ Enables the virtual environment.
 
 deactivate:
 
-Leaves the virtual environment.
+Leaves the virtual environment.'''
 
 
 # ==========================================================
 # SUMMARY
 # ==========================================================
 
-• Virtual environments isolate project dependencies.
-• venv is Python's built-in virtual-environment module.
-• pip is used to manage Python packages.
-• requirements.txt stores project dependencies.
-• venv should generally not be uploaded to GitHub.
-• .gitignore can be used to ignore the venv folder.
-• A virtual environment can be recreated whenever needed.
+# • Virtual environments isolate project dependencies.
+# • venv is Python's built-in virtual-environment module.
+# • pip is used to manage Python packages.
+# • requirements.txt stores project dependencies.
+# • venv should generally not be uploaded to GitHub.
+# • .gitignore can be used to ignore the venv folder.
+# • A virtual environment can be recreated whenever needed.
 
 
 # ==========================================================
